@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+header {
+    background: #111;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+nav {
+    background: #222;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+section {
+    padding: 2rem 1rem;
+    max-width: 1100px;
+    margin: auto;
+}
+.hero {
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1597006434306-0b5b1e72960b') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 6rem 2rem;
+}
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.2rem;
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.service {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 280px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+.gallery img {
+    width: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
