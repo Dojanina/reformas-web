@@ -1,76 +1,106 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #fff;
+    color: #222;
+    line-height: 1.6;
 }
 header {
-    background: #111;
-    color: white;
-    padding: 2rem 1rem;
+    background-color: #000;
+    color: #fff;
+    padding: 2.5rem 1rem;
     text-align: center;
 }
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    letter-spacing: 2px;
 }
 nav {
-    background: #222;
-    padding: 0.5rem 1rem;
+    background-color: #111;
+    padding: 1rem;
     text-align: center;
 }
 nav a {
-    color: white;
-    margin: 0 1rem;
+    color: #ccc;
+    margin: 0 1.5rem;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.95rem;
 }
-section {
-    padding: 2rem 1rem;
-    max-width: 1100px;
-    margin: auto;
+nav a:hover {
+    color: #fff;
 }
 .hero {
-    text-align: center;
     background: url('https://images.unsplash.com/photo-1597006434306-0b5b1e72960b') no-repeat center center;
     background-size: cover;
     color: white;
-    padding: 6rem 2rem;
+    text-align: center;
+    padding: 8rem 2rem;
 }
 .hero h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 }
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #111;
 }
 .services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.service {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    padding: 2rem;
+    width: 280px;
+    transition: transform 0.3s ease;
+}
+.service:hover {
+    transform: translateY(-5px);
+}
+.service h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    color: #333;
+}
+.gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
 }
-.service {
-    background: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    width: 280px;
-}
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-}
 .gallery img {
-    width: 300px;
-    border-radius: 8px;
+    width: 320px;
+    height: 220px;
     object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 footer {
-    background: #111;
-    color: white;
+    background-color: #000;
+    color: #bbb;
     text-align: center;
     padding: 2rem 1rem;
+    font-size: 0.9rem;
 }
