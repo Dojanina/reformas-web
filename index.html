@@ -1,72 +1,50 @@
-# Crear un archivo HTML básico para una web de reformas
-html_code = """
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reformas XYZ</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #333; color: white; padding: 1rem 2rem; }
-        nav a { color: white; margin: 0 1rem; text-decoration: none; }
-        section { padding: 2rem; }
-        .services, .gallery { display: flex; flex-wrap: wrap; gap: 1rem; }
-        .service, .gallery img { flex: 1 1 200px; background: #f4f4f4; padding: 1rem; border-radius: 8px; }
-        footer { background: #333; color: white; text-align: center; padding: 1rem; }
-        form input, form textarea { width: 100%; margin-bottom: 1rem; padding: 0.5rem; }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HandyMatt London</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header>
-    <h1>Reformas XYZ</h1>
-    <nav>
-        <a href="#servicios">Servicios</a>
-        <a href="#galeria">Galería</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+    <h1>HandyMatt London</h1>
 </header>
+<nav>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-<section id="servicios">
-    <h2>Servicios</h2>
+<div class="hero">
+    <h2>Your Trusted London Handyman</h2>
+    <p>Expert Handyman Services with Professional Results</p>
+</div>
+
+<section id="services">
+    <h2>Our Services</h2>
     <div class="services">
-        <div class="service"><h3>Cocinas</h3><p>Reformas integrales de cocinas modernas.</p></div>
-        <div class="service"><h3>Baños</h3><p>Actualización completa de baños con acabados de calidad.</p></div>
-        <div class="service"><h3>Electricidad</h3><p>Instalaciones eléctricas certificadas.</p></div>
+        <div class="service"><h3>Kitchens</h3><p>Modern kitchen renovations with premium finishes.</p></div>
+        <div class="service"><h3>Bathrooms</h3><p>Full upgrades with contemporary design.</p></div>
+        <div class="service"><h3>Electrical</h3><p>Certified and secure electrical installations.</p></div>
+        <div class="service"><h3>Painting</h3><p>Interior and exterior work with a professional finish.</p></div>
     </div>
 </section>
 
-<section id="galeria">
-    <h2>Galería</h2>
+<section id="gallery">
+    <h2>Project Gallery</h2>
     <div class="gallery">
-        <img src="https://via.placeholder.com/300x200" alt="Ejemplo reforma 1">
-        <img src="https://via.placeholder.com/300x200" alt="Ejemplo reforma 2">
-        <img src="https://via.placeholder.com/300x200" alt="Ejemplo reforma 3">
+        <img src="https://images.unsplash.com/photo-1586796677193-09a697d6b48f" alt="Project 1" />
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Project 2" />
+        <img src="https://images.unsplash.com/photo-1580927752452-89f2dcdab499" alt="Project 3" />
     </div>
-</section>
-
-<section id="contacto">
-    <h2>Contacto</h2>
-    <form>
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo electrónico" required>
-        <textarea placeholder="Mensaje" rows="5" required></textarea>
-        <button type="submit">Enviar</button>
-    </form>
 </section>
 
 <footer>
-    <p>&copy; 2025 Reformas XYZ | Síguenos en redes sociales</p>
+    <p>&copy; 2025 HandyMatt London. All rights reserved.</p>
 </footer>
 
 </body>
 </html>
-"""
-
-# Guardar el HTML en un archivo
-file_path = "/mnt/data/index.html"
-with open(file_path, "w", encoding="utf-8") as f:
-    f.write(html_code)
-
-file_path
