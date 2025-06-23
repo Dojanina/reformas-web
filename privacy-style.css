@@ -1,0 +1,18 @@
+footer {
+  background-color: #1a2238;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+footer a {
+  color: #e2b714;
+  text-decoration: underline;
+}
+
+footer strong {
+  color: #fff;
+  font-weight: 600;
+}

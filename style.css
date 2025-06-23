@@ -1,106 +1,292 @@
+/* === RESET Y TIPOGRAFÍA BÁSICA === */
 body {
-    margin: 0;
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: #fff;
-    color: #222;
-    line-height: 1.6;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #1a1a1a;
 }
-header {
-    background-color: #000;
-    color: #fff;
-    padding: 2.5rem 1rem;
-    text-align: center;
+
+/* === BANNER SOLO LOGO A PANTALLA COMPLETA === */
+.site-banner {
+  background: transparent;   /* Fondo transparente */
+  padding: 0;                /* Sin espacio arriba/abajo */
+  margin: 0;                 /* Sin margen */
+  width: 100%;               /* Ocupa todo el ancho */
+  text-align: center;        /* Centra horizontalmente el <img> */
 }
-header h1 {
-    margin: 0;
-    font-size: 3rem;
-    letter-spacing: 2px;
+
+.banner-logo {
+  display: block;       /* elimina el pequeño espacio en línea */
+  margin: 0 auto;       /* centra el <img> horizontalmente */
+  max-width: 400px;     /* ajusta este valor al tamaño deseado en escritorio */
+  width: 80%;           /* se adapta al 80% del ancho en pantallas pequeñas */
+  height: auto;         /* mantiene la proporción */
 }
-nav {
-    background-color: #111;
-    padding: 1rem;
-    text-align: center;
+@media (max-width: 480px) {
+  .banner-logo {
+    max-width: 60%;     /* más pequeño en móviles */
+    width: 80%;
+  }
 }
-nav a {
-    color: #ccc;
-    margin: 0 1.5rem;
-    text-decoration: none;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.95rem;
+
+/* === NAVEGACIÓN PRINCIPAL === */
+.main-nav {
+  background-color: #1a2238;
+  text-align: center;
+  padding: 0.8rem;
 }
-nav a:hover {
-    color: #fff;
+.main-nav a {
+  color: #f2f0f6;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-.hero {
-    background: url('https://images.unsplash.com/photo-1597006434306-0b5b1e72960b') no-repeat center center;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 8rem 2rem;
+
+/* === SECCIONES Y CONTENIDO === */
+.content-section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
 }
-.hero h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+.content-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
-.hero p {
-    font-size: 1.3rem;
-    max-width: 700px;
-    margin: 0 auto;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+
+/* === SECCIÓN ABOUT US === */
+#about .about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 2rem auto 4rem;
 }
-section {
-    padding: 4rem 2rem;
-    max-width: 1200px;
-    margin: auto;
+
+.about-text {
+  flex: 1 1 400px;
+  line-height: 1.6;
 }
-h2 {
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    color: #111;
+.about-text p {
+  margin-bottom: 1.5rem;
+  color: #cbc0c0;
+  font-size: 1rem;
 }
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
+.about-text strong {
+  color: #1a2238;
+  font-weight: 600;
 }
-.service {
-    background: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    padding: 2rem;
-    width: 280px;
-    transition: transform 0.3s ease;
+
+.about-image {
+  flex: 1 1 300px;
+  text-align: center;
 }
-.service:hover {
-    transform: translateY(-5px);
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
-.service h3 {
-    margin-top: 0;
-    font-size: 1.4rem;
-    color: #333;
+
+/* Responsive para About */
+@media (max-width: 768px) {
+  #about .about-container {
+    flex-direction: column;
+  }
+  .about-image,
+  .about-text {
+    flex: 1 1 100%;
+  }
 }
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
+
+/* === SECCIÓN OUR SERVICES === */
+.content-section.light {
+  background-color: #f8f8f8;
 }
-.gallery img {
-    width: 320px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
+
+.service-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Imágenes de fondo para cada servicio */
+.icon-kitchen       { background-image: url("kitchen.webp"); }
+.icon-bathroom      { background-image: url("bath.webp"); }
+.icon-electrical    { background-image: url("electrical.png"); }
+.icon-painting      { background-image: url("paint.png"); }
+.icon-handyman      { background-image: url("handy.png"); }
+.icon-carpentry     { background-image: url("carpentry.png"); }
+.icon-roof          { background-image: url("roof.webp"); }
+.icon-rubish        { background-image: url("rubish.png"); }
+.icon-refurb        { background-image: url("refurb.png"); }
+.icon-plumbing      { background-image: url("plumbing.webp"); }
+
+.service-card h3 {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.25rem;
+  color: #1a2238;
+}
+.service-card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* === SLIDER DE PORTFOLIO === */
+.slider {
+  position: relative;
+  max-width: 900px;
+  margin: 3rem auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* === FORMULARIO DE CONTACTO === */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.contact-form button {
+  background-color: #1a2238;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* === FOOTER === */
 footer {
-    background-color: #000;
-    color: #bbb;
-    text-align: center;
-    padding: 2rem 1rem;
-    font-size: 0.9rem;
+  background-color: #1a2238;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
 }
+
+footer a {
+  color: #e2b714;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+/* === BANNER DE COOKIES === */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1a2238;
+  color: #fff;
+  padding: 1rem;
+  display: none;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.cookie-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cookie-content p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.cookie-content a {
+  color: #e2b714;
+  text-decoration: underline;
+}
+
+.cookie-buttons .btn {
+  background-color: #e2b714;
+  color: #1a2238;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cookie-buttons .btn-secondary {
+  background-color: transparent;
+  border: 1px solid #e2b714;
+  color: #e2b714;
+}
+

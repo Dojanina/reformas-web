@@ -1,56 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>HandyMatt London</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-        .logo {
-            max-width: 160px;
-            margin-bottom: 1rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HandyMatt London</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-    <img src="logo25.webp" alt="HandyMatt Logo" class="logo" />
-    <h1>HandyMatt London</h1>
+ <header class="site-banner">
+  <img src="logomatt.webp" alt="HandyMatt Logo" class="banner-logo" />
 </header>
-<nav>
+
+  <nav class="main-nav">
+    <a href="#about">About</a>
     <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
+    <a href="#portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
-</nav>
+  </nav>
 
-<div class="hero">
-    <h2>Your Trusted London Handyman</h2>
-    <p>Property Maintenance & Renovations with a Touch of Class</p>
-</div>
+  <section id="about" class="content-section">
+  <h2>About Us</h2>
+  <div class="about-container">
+    <div class="about-text">
+      <p>
+        <strong>HandyMatt London</strong> was founded on the principle that
+        every home deserves expert care and impeccable craftsmanship. With over
+        a decade of experience serving London’s most discerning clients, we
+        specialize in delivering premium home maintenance, renovations, and
+        bespoke carpentry solutions.
+      </p>
+      <p>
+        Our team is composed of fully qualified tradespeople—electricians,
+        carpenters, painters, and handyman professionals who bring a passion
+        for precision and a commitment to excellence to every project. Whether
+        you need a complete kitchen overhaul, a luxury bathroom upgrade, or
+        small, but essential repairs, we treat your property as if it were our
+        own.
+      </p>
+      <p>
+        At HandyMatt London, we believe that quality, transparency, and
+        communication are the cornerstones of a successful renovation.
 
-<section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-        <div class="service"><h3>Kitchens</h3><p>Modern kitchen renovations with premium finishes.</p></div>
-        <div class="service"><h3>Bathrooms</h3><p>Full upgrades with contemporary design.</p></div>
-        <div class="service"><h3>Electrical</h3><p>Certified and secure electrical installations.</p></div>
-        <div class="service"><h3>Painting</h3><p>Interior and exterior work with a professional finish.</p></div>
+        That’s why we provide a clear timeline, detailed estimates, and
+        continuous updates from start to finish. Your trust is our greatest
+        asset, and our work is your guarantee of timeless elegance and
+        enduring value.
+      </p>
     </div>
+    <div class="about-image">
+      <img src="hanymatt.PNG" alt="HandyMatt Team at Work">
+    </div>
+  </div>
 </section>
 
-<section id="gallery">
-    <h2>Project Gallery</h2>
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1586796677193-09a697d6b48f" alt="Project 1" />
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Project 2" />
-        <img src="https://images.unsplash.com/photo-1580927752452-89f2dcdab499" alt="Project 3" />
+ <section id="services" class="content-section light">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon icon-kitchen"></div>
+      <h3>Kitchen Renovations</h3>
+      <p>Stylish and functional kitchens with premium finishes and bespoke cabinetry.</p>
     </div>
+
+    <div class="service-card">
+      <div class="service-icon icon-bathroom"></div>
+      <h3>Bathroom Upgrades</h3>
+      <p>Elegant bathroom transformations: modern fixtures, tiles, and ambient lighting.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon icon-electrical">⚡</div>
+      <h3>Electrical Work</h3>
+      <p>Certified installations, safety checks and fault-finding for absolute peace of mind.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon icon-painting"></div>
+      <h3>Painting & Decorating</h3>
+      <p>Premium interior and exterior painting, including surface prep and premium coatings.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon icon-roof"></div>
+      <h3>Roofing</h3>
+      <p>Repair and replacement</p>
+    </div>
+      <div class="service-card">
+      <div class="service-icon icon-carpentry"></div>
+      <h3>Carpentry</h3>
+      <p>Custom carpentry: shelving, skirting, doors, built-in wardrobes and more.</p>
+    </div>
+      <div class="service-card">
+      <div class="service-icon icon-refurb"></div>
+      <h3>Refurbisment</h3>
+      <p>All size projects</p>
+    </div>
+      <div class="service-card">
+      <div class="service-icon icon-rubish"></div>
+      <h3>rubish removal</h3>
+      <p>Collection and sipose of building debris, garden waste, etc</p>
+    </div>
+      <div class="service-card">
+      <div class="service-icon icon-plumbing"></div>
+      <h3>Plumbing</h3>
+      <p>Leaks, installing and repairing showers and toilets</p>
+    </div>
+<div class="service-card">
+      <div class="service-icon icon-handyman"></div>
+      <h3>Handyman & Odd Jobs</h3>
+      <p>From small repairs to installations—no job is too small. Reliable fixes, every time.</p>
+    </div>
+
+  
+  </div>
+</section>
+
+
+ <section id="portfolio" class="content-section">
+    <h2>Our Portfolio</h2>
+    <div class="slider" id="slider">
+      <div class="slides" id="slides">
+        <img src="pic1.PNG" alt="Project 1">
+        <img src="Pic2.PNG" alt="Project 2">
+        <img src="Pic3.PNG" alt="Project 3">
+        <img src="Pic4.PNG" alt="Project 4">
+        <img src="Pic5.PNG" alt="Project 5">
+        <img src="Pic6.PNG" alt="Project 6">
+        <img src="Pic7.PNG" alt="Project 7">
+        <img src="Pic8.PNG" alt="Project 8">
+        <img src="Pic9.PNG" alt="Project 9">
+        <img src="Pic10.PNG" alt="Project 10">
+        <img src="Pic11.PNG" alt="Project 11">
+      </div>
+      <button class="nav-button prev" onclick="moveSlide(-1)">‹</button>
+      <button class="nav-button next" onclick="moveSlide(1)">›</button>
+    </div>
+  </section>
+
+  <script>
+    let currentIndex = 0;
+    const slides = document.getElementById('slides');
+    const totalSlides = slides.children.length;
+
+    function moveSlide(step) {
+      currentIndex = (currentIndex + step + totalSlides) % totalSlides;
+      slides.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+    }
+
+    // Cambio automático cada 5 segundos
+    setInterval(() => {
+      moveSlide(1);
+    }, 5000);
+  </script>
+<script>
+// Cookie handling script
+function setCookie(name, value, days) {
+  let expires = "";
+  if (days) {
+    const date = new Date();
+    date.setTime(date.getTime() + days * 24*60*60*1000);
+    expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+function getCookie(name) {
+  const nameEQ = name + "=";
+  const ca = document.cookie.split(';');
+  for (let i = 0; i < ca.length; i++) {
+    let c = ca[i].trim();
+    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length);
+  }
+  return null;
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  if (!getCookie("cookie_consent")) {
+    document.getElementById("cookie-banner").style.display = "block";
+  }
+
+  document.getElementById("accept-cookies").addEventListener("click", () => {
+    setCookie("cookie_consent", "all", 365);
+    document.getElementById("cookie-banner").style.display = "none";
+  });
+
+  document.getElementById("reject-cookies").addEventListener("click", () => {
+    setCookie("cookie_consent", "essential", 365);
+    document.getElementById("cookie-banner").style.display = "none";
+  });
+});
+</script>
+
+<section id="contact" class="content-section">
+  <h2>Contact Us</h2>
+  <form class="contact-form" action="https://formspree.io/f/mblylvzr" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </section>
 
 <footer>
+  <div class="footer-content">
     <p>&copy; 2025 HandyMatt London. All rights reserved.</p>
+    <p>
+      <strong>HANDYMATT LTD</strong><br />
+      Company No. 12439597 · Incorporated on 3 February 2020<br />
+      1st Floor, 342 Streatham High Road, London, SW16 6HH, UK
+    </p>
+    <p><a href="privacy.html">Privacy Policy</a></p>
+  </div>
 </footer>
 
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-content">
+    <p>We use cookies to improve your experience. See our <a href="cookies.html">Cookie Policy</a>.</p>
+    <div class="cookie-buttons">
+      <button class="btn" id="accept-cookies">Accept</button>
+      <button class="btn btn-secondary" id="reject-cookies">Decline</button>
+    </div>
+  </div>
+</div>
 </body>
 </html>
