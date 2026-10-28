@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thank You | HandyMatt London</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<style>
+@font-face{font-family:"Inter";font-weight:400;font-display:swap;src:url(assets/fonts/inter-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:500;font-display:swap;src:url(assets/fonts/inter-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Roboto Slab";font-weight:700;font-display:swap;src:url(assets/fonts/roboto-slab-latin-700-normal.woff2) format("woff2")}
+:root{--ink:#111;--muted:#6e6e6e;--line:#e6e6e6;--bg:#fff;--gold:#a8843f}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ink:#f2f2f2;--muted:#9a9a9a;--line:#2b2b2b;--bg:#111;--gold:#c9a45c}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7;min-height:100vh;display:flex;flex-direction:column}
+header{border-bottom:1px solid var(--line);padding:14px 20px}
+header a{display:inline-flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-family:"Roboto Slab",Georgia,serif;font-weight:700;letter-spacing:.06em}
+header img{height:40px}
+main{flex:1;display:grid;place-items:center;padding:60px 20px;text-align:center}
+.box{max-width:560px}
+.tick{width:64px;height:64px;border-radius:50%;border:2px solid var(--gold);color:var(--gold);display:grid;place-items:center;font-size:1.8rem;margin:0 auto 24px}
+h1{font-family:"Roboto Slab",Georgia,serif;font-size:clamp(1.8rem,5vw,2.4rem);line-height:1.2;margin-bottom:14px}
+p{color:var(--muted);margin-bottom:10px}
+.cta{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:13px 24px;border:1px solid var(--ink);color:var(--ink);text-decoration:none;font-weight:500;border-radius:2px}
+.btn-dark{background:var(--ink);color:var(--bg)}
+</style>
+</head>
+<body>
+<header><a href="index.html"><img src="assets/logo-mark.png" alt="HandyMatt London logo" width="29" height="40">HANDYMATT LONDON</a></header>
+<main>
+  <div class="box">
+    <div class="tick" aria-hidden="true">✓</div>
+    <h1>Thank you, we've received your request</h1>
+    <p>We'll be in touch shortly, usually the same working day (Mon–Fri, 9am–5pm).</p>
+    <p>Need to send photos of the job? Message us on WhatsApp.</p>
+    <div class="cta">
+      <a class="btn btn-dark" href="https://wa.me/447910257442?text=Hi%20Matt%2C%20I%27ve%20just%20sent%20a%20quote%20request" target="_blank" rel="noopener">Send photos on WhatsApp</a>
+      <a class="btn" href="index.html">Back to the website</a>
+    </div>
+  </div>
+</main>
+</body>
+</html>
